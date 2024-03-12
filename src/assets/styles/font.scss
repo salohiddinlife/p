@@ -1,0 +1,28 @@
+$inter: ('Inter-Bold', 700),
+        ('Inter-Regular', 400),
+        ('Inter-Medium', 500),
+        ('Inter-SemiBold', 600);
+
+@each $name, $weight in $inter {
+    @font-face {
+        font-family: 'inter';
+        src: url('@/assets/fonts/Inter/#{$name}.ttf');
+        font-weight: $weight;
+    }
+}
+$SF:('SF-Regular', 400),
+    ('SF-Medium', 500),
+    ('SF-SemiBold', 600);
+
+@each $name, $weight in $SF {
+    @font-face {
+        font-family: 'SF';
+        src: url('@/assets/fonts/Inter/#{$name}.otf');
+        font-weight: $weight;
+    }
+}
+@font-face {
+    font-family: 'far';
+    src: url('@/assets/fonts/Webfonts/fa-regular-400.ttf');
+    font-weight: 400;
+}

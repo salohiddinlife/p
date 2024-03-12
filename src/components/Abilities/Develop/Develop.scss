@@ -1,0 +1,37 @@
+.develop {
+    grid-column: 2/3;
+    width: 286px;
+    height: 149px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 32px 60px 40px;
+    border: 2px solid rgb(38, 38, 38);
+    border-radius: 14px;
+    background: linear-gradient(90deg, rgba(230,62,33,0.45702030812324934) 12%, rgba(27,27,27,1) 69%);
+    & h2 {
+        color: rgb(192, 192, 192);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+    }
+}
+.user {
+    display: flex;
+    grid-column: 1/2;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid rgb(38, 38, 38);
+    border-radius: 14px;
+    background: linear-gradient(15.52deg, rgba(230, 62, 33, 0.2) 6.627%, rgba(51, 19, 14, 0) 29.171%), rgb(27, 27, 27);
+    width: 286px;
+    height: 149px;
+    padding: 60px 40px 60px 40px;
+    & h2 {
+        color: rgb(192, 192, 192);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+    }
+}

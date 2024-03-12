@@ -1,0 +1,83 @@
+@import "./vars.scss",
+"./font.scss",
+"./effect.scss",
+"@/components/Footer/Footer.scss",
+"@/components/Header/Header.scss",
+"@/components/Main/Main.scss",
+"@/components/Special/Special.scss",
+"@/components/Burger/Burger.scss",
+"@/components/Abilities/Product/Product.scss",
+"@/components/Abilities/Abilities.scss",
+"@/components/Recents/Recents.scss",
+"@/components/Abilities/User/User.scss",
+"@/components/Abilities/Develop/Develop.scss",
+"@/components/Abilities/Git/Git.scss",
+"@/components/Abilities/Linux/Linux.scss",
+"@/components/Abilities/Langs/Langs.scss",
+'@/components/Projects/Projects.scss',
+'@/components/Projects/ProjectsItem/ProjectsItem.scss'
+
+;
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  transition: background 0.3s;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'inter';
+  font-weight: 500;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  padding: 64px 30px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+
+  & .container {
+    max-width: 1215px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+body {
+  background: $bg;
+  
+}

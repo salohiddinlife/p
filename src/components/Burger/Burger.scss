@@ -1,0 +1,58 @@
+/*--====== Global Variables ======--*/
+:root {
+    --bg-color: #13131f;
+    --bg-color-2: #161623;
+    --text-color: #a9afc3;
+  }
+  /*--====== Sidebar ======--*/
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    max-width: 300px;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--bg-color-2);
+    box-shadow: 0 10px 20px -4px #000;
+    overflow-x: hidden;
+    overflow-y: auto;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: opacity 0.3s ease, visibility 0.2s ease, transform 0.3s ease;
+  }
+  /* when the sidebar has 'show' class */
+  #sidebar.show {
+    pointer-events: all;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .sidebar_content {
+    padding: 2.8rem 0;
+    pointer-events: none;
+    /* so that the Sidebar does not get closed while clicking on sidebar_content */
+  }
+  .sidebar_content a {
+    pointer-events: all;
+    /* so that all the a inside sidebar_content are clickable */
+  }
+  .sidebar_body {
+    border-top: 1px dashed var(--text-color);
+    border-bottom: 1px dashed var(--text-color);
+  }
+  .side_navlinks ul {
+    display: grid;
+    gap: 2rem;
+  }
+  .side_navlinks li a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+  }
+  .side_navlinks a:hover {
+    opacity: 1;
+  }

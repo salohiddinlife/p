@@ -1,0 +1,9 @@
+.ability {
+    grid-column: 3/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 149px 149px;
+    gap: 20px;
+    transform: translateX(calc(3% * (max(100 - var(--scroll), 75) - 75) * 100/25));
+    transition: transform .5s;
+}

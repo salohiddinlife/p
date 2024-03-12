@@ -1,0 +1,19 @@
+.user {
+    display: flex;
+    grid-column: 1/2;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid rgb(38, 38, 38);
+    border-radius: 14px;
+    background: linear-gradient(189.04deg, rgba(230, 62, 33, 0.2) 18.594%, rgba(51, 19, 14, 0) 53.252%), rgb(27, 27, 27);
+    width: 286px;
+    height: 149px;
+    padding: 60px 40px 60px 40px;
+    & h2 {
+        color: rgb(192, 192, 192);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+    }
+}

@@ -1,0 +1,21 @@
+.projects {
+    max-width: 1440px;
+    width: 100%;
+    &__header {
+        max-width: 1440px;
+        width: 100%;
+        height: 70px;
+        display: grid;
+        place-items: center;
+        background: rgb(27, 27, 27);
+        border-radius: 14px;
+        border: 2px solid rgb(38, 38, 38);
+        transform: translateX(calc(5% * (max(100 - var(--scroll), 50) - 50) * 100/75));
+        transition: transform .5s;
+        &-title {
+            font-weight: 500;
+            font-size: 24px;
+            color: #c0c0c0;
+        }
+    }
+}

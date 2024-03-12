@@ -1,0 +1,63 @@
+.project {
+
+    &__swiper {
+        max-width: 1215px;
+        width: 100%;
+        height: 100%;
+        max-height: 694px;
+        border-radius: 14px;
+        transform: translateX(calc(-5% * (max(100 - var(--scroll), 50) - 50) * 100/75));
+        transition: transform .5s;
+    }
+
+    &__item {
+        border: 2px solid #262626;
+        border-radius: 14px;
+        padding: 41px 54px;
+        width: 598px;
+        height: 337px;
+        position: relative;
+
+        &-link {
+            position: absolute;
+            z-index: 66;
+            top: 50px;
+            right: 50px;
+
+            &-img {}
+        }
+
+        &-info {
+            position: absolute;
+            z-index: 99;
+            bottom: 50px;
+            left: 50px;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            width: max-content;
+            height: max-content;
+            background: rgb(27, 27, 27);
+            border-radius: 14px;
+            border: 2px solid rgb(38, 38, 38);
+            padding: 10px;
+            color: white;
+        }
+
+        &-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cinephile {
+    color: white;
+}
